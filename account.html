@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recipes260 - My Account</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Add your custom styles here */
+    .account-form {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 30px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Top navigation menu -->
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="search_recipes.html">Search Recipes</a></li>
+      <li class="nav-item active"><a class="nav-link" href="account.html">My Account</a></li>
+    </ul>
+  </nav>
+
+  <!-- Account section -->
+  <section class="container mt-4">
+    <div class="account-form">
+      <h2>My Account</h2>
+      
+      <!-- If user is logged in, display account information -->
+      <div id="loggedInContent">
+        <!-- Replace the placeholder content with user account data -->
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name" value="John Doe">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" value="johndoe@example.com">
+        </div>
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" class="form-control" id="username" placeholder="Enter your username" value="johndoe123">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Enter your password" value="********">
+        </div>
+        <!-- Add a button to update user information if necessary -->
+        <button class="btn btn-primary">Update</button>
+      </div>
+      
+      <!-- If user is not logged in, display login form -->
+      <div id="loggedOutContent" style="display: none;">
+        <div class="form-group">
+          <label for="loginUsername">Username</label>
+          <input type="text" class="form-control" id="loginUsername" placeholder="Enter your username">
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password">
+        </div>
+        <button class="btn btn-primary">Log In</button>
+        <p>Not signed up? <a href="signup.html">Sign up here</a></p>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Add your JavaScript files if needed -->
+  <script src=""></script>
+  <script>
+    // JavaScript to toggle display of content based on login status
+    $(document).ready(function() {
+      const isLoggedIn = false; // Replace with your login check logic (e.g., true if user is logged in)
+
+      if (isLoggedIn) {
+        $("#loggedInContent").show();
+        $("#loggedOutContent").hide();
+      } else {
+        $("#loggedInContent").hide();
+        $("#loggedOutContent").show();
+      }
+    });
+  </script>
+</body>
+</html>
