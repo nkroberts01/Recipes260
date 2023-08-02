@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Recipes260 - Search Recipes</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Add your custom styles here */
+    .recipe-card {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Top navigation menu -->
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+      <li class="nav-item active"><a class="nav-link" href="#">Search Recipes</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">My Account</a></li>
+    </ul>
+  </nav>
+
+  <!-- Search Recipes section -->
+  <section class="container mt-4">
+    <div class="search-form">
+      <h2>Search Recipes</h2>
+      <form>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Enter search keyword" aria-label="Search keyword" aria-describedby="searchDropdown">
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="submit">Search</button>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="searchDropdown">Search By</label>
+          <select class="form-control" id="searchDropdown">
+            <option value="recipeName">Recipe Name</option>
+            <option value="ingredient">Ingredient</option>
+            <option value="user">User</option>
+          </select>
+        </div>
+      </form>
+    </div>
+
+    <!-- Recipes display area -->
+    <div class="row">
+      <div class="col-md-4">
+        <div class="recipe-card">
+          <!-- Replace the placeholder content with the actual recipe data -->
+          <h4>Recipe 1</h4>
+          <p>Ingredients: Ingredient 1, Ingredient 2, Ingredient 3</p>
+          <p>Instructions: Step 1, Step 2, Step 3</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="recipe-card">
+          <!-- Replace the placeholder content with the actual recipe data -->
+          <h4>Recipe 2</h4>
+          <p>Ingredients: Ingredient A, Ingredient B, Ingredient C</p>
+          <p>Instructions: Step A, Step B, Step C</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="recipe-card">
+          <!-- Replace the placeholder content with the actual recipe data -->
+          <h4>Recipe 3</h4>
+          <p>Ingredients: Ingredient X, Ingredient Y, Ingredient Z</p>
+          <p>Instructions: Step X, Step Y, Step Z</p>
+        </div>
+      </div>
+      <!-- Add more recipe cards here as needed -->
+    </div>
+  </section>
+
+  <!-- Footer section -->
+  <footer class="footer mt-auto">
+    <div class="container">
+      <p>Contact: contact@recipes260.com</p>
+      <ul class="footer-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Add your JavaScript files if needed -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+</body>
+</html>
